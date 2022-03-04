@@ -1,5 +1,6 @@
 import RandomBot
 import InteractivePlayer
+import UserBot
 from Connect4 import Connect4, InvalidMove
 
 
@@ -39,6 +40,7 @@ def simulate_game(player1, player2):
 def main():
     player1 = InteractivePlayer.InteractivePlayer("Human Player")
     player2 = RandomBot.RandomBot("Random Bot 2")
+    # player2 = UserBot.UserBot("User bot")
     simulate_game(player1, player2)
 
 
